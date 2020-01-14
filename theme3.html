@@ -26,7 +26,7 @@
                                     <v-img src="https://i.ibb.co/rMYWhw2/man-crossed-arms-1516680-2x-1.png">
 
                                     </v-img>
-                                    <v-btn color="#23A565" absolute dark bottom small>
+                                    <v-btn color="#23A565" absolute dark small style="bottom: 22px;">
 
                                         TAP TO CHAT
 
@@ -73,9 +73,9 @@
                             </v-col>
                             <v-col class="col-md-6 col-sm-6 hidden-sm-and-down">
                                 <v-btn class="ma-2" outlined color="white" left>
-                                    Upload Audio & Text <v-icon right>mdi-volume-high</v-icon>
+                                    Audio & Text <v-icon right>mdi-volume-high</v-icon>
                                 </v-btn>
-                                <v-btn class="ma-2" outlined color="white" left>
+                                <v-btn outlined color="white" left>
                                     Upload Video <v-icon right>ondemand_video</v-icon>
                                 </v-btn>
                             </v-col>
@@ -132,50 +132,50 @@
                         </v-tabs>
                     </v-col>
                 </v-row>
+                <v-row class="justify-center align-center tabrow" no-gutters style="background-color: #F0F3F1;">
+                    <v-col class="col-md-5 col-sm-12 " cols="12">
+                        <v-row class="justify-center text-center" no-gutters>
+
+                            <v-col md="3" sm="3" cols="3" v-on:click="activetab=1" class="tabs "
+                                v-bind:class="[ activetab === 1 ? 'active' : '' ]">
+                                <a class="tabtitle">
+                                    <v-icon class="d-block" color="#23A565">mdi-monitor-screenshot</v-icon>
+                                    Programming
+                                    languages
+                                </a>
+                            </v-col>
+                            <v-col md="3" sm="3" cols="3" v-on:click="activetab=2" class="tabs "
+                                v-bind:class="[ activetab === 2 ? 'active' : '' ]">
+                                <a class="tabtitle">
+                                    <v-icon class="d-block" color="#23A565">mdi-ruler-square-compass</v-icon>
+                                    Frameworks/
+                                    Databases
+                                </a>
+                            </v-col>
+                            <v-col md="3" sm="3" cols="3" v-on:click="activetab=4" class="tabs "
+                                v-bind:class="[ activetab === 4 ? 'active' : '' ]">
+                                <a class="tabtitle">
+                                    <v-icon class="d-block" color="#23A565">mdi-disc-player</v-icon>Software
+                                </a>
+                            </v-col>
+                            <v-col md="3" sm="3" cols="3" v-on:click="activetab=3" class="tabs "
+                                v-bind:class="[ activetab === 3 ? 'active' : '' ]">
+                                <a class="tabtitle">
+                                    <v-icon class="d-block" color="#23A565">mdi-material-design</v-icon>Design
+                                    Skills
+                                </a>
+                            </v-col>
+
+
+
+
+
+
+
+                    </v-col>
+                </v-row>
             </v-card>
 
-            <v-row class="justify-center align-center tabrow" no-gutters style="background-color: #F0F3F1;">
-                <v-col class="col-md-5 col-sm-12 " cols="12">
-                    <v-row class="justify-center text-center" no-gutters>
-
-                        <v-col md="3" sm="3" cols="3" v-on:click="activetab=1" class="tabs mini"
-                            v-bind:class="[ activetab === 1 ? 'active' : '' ]">
-                            <a>
-                                <v-icon class="d-block" color="#23A565">mdi-monitor-screenshot</v-icon>
-                                Programming
-                                languages
-                            </a>
-                        </v-col>
-                        <v-col md="3" sm="3" cols="3" v-on:click="activetab=2" class="tabs mini"
-                            v-bind:class="[ activetab === 2 ? 'active' : '' ]">
-                            <a>
-                                <v-icon class="d-block" color="#23A565">mdi-ruler-square-compass</v-icon>
-                                Frameworks/
-                                Databases
-                            </a>
-                        </v-col>
-                        <v-col md="3" sm="3" cols="3" v-on:click="activetab=4" class="tabs mini"
-                            v-bind:class="[ activetab === 4 ? 'active' : '' ]">
-                            <a>
-                                <v-icon class="d-block" color="#23A565">mdi-disc-player</v-icon>Software
-                            </a>
-                        </v-col>
-                        <v-col md="3" sm="3" cols="3" v-on:click="activetab=3" class="tabs mini"
-                            v-bind:class="[ activetab === 3 ? 'active' : '' ]">
-                            <a>
-                                <v-icon class="d-block" color="#23A565">mdi-material-design</v-icon>Design
-                                Skills
-                            </a>
-                        </v-col>
-
-
-
-
-
-
-
-                </v-col>
-            </v-row>
             <v-container>
                 <v-row v-if="activetab === 1" class="justify-center">
                     <v-col class="col-md-8 col-sm-12">
@@ -626,7 +626,7 @@
             padding: 30px 15px !important;
             transition: background-color 0.5s;
 
-            font-weight: bold;
+
 
             text-align: center;
             display: inline-block;
@@ -689,13 +689,37 @@
             align-items: center !important;
         }
 
+        .v-tab {
+            align-items: center;
+            display: flex;
+            flex: 0 1 auto;
+            font-size: .875rem;
+            font-weight: 500;
+            justify-content: center;
+            letter-spacing: .0892857143em;
+            line-height: normal;
+            min-width: 90px;
+            max-width: 360px;
+            outline: none;
+            padding: 0 30px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
         .v-tab:not(.v-tab--active) {
             background-color: #FFFFFF;
             color: black !important;
             margin: 0 16px;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
-            padding-right: 30px;
+
             position: relative;
         }
 
@@ -705,7 +729,7 @@
             margin: 0 16px;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
-            padding-right: 30px;
+
             position: relative;
         }
 
@@ -767,6 +791,11 @@
             font-size: 1rem;
         }
 
+        .tabtitle {
+            line-height: 1em;
+            font-size: 14px;
+        }
+
         @media only screen and (max-width: 600px) {
             .head {
                 font-size: 20px !important;
@@ -778,6 +807,10 @@
 
             .mini {
                 font-size: 12px !important;
+            }
+
+            .tabtitle {
+                font-size: 10px !important;
             }
         }
 
