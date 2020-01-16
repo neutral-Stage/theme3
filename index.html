@@ -36,7 +36,7 @@
 
 
                             </v-col>
-                            <v-col class="col-md-6 col-sm-6 pt-12" cols="5">
+                            <v-col class="col-md-6 col-sm-6 pt-6 pl-1" cols="5">
                                 <p class=" pl-1 head font-weight-bold text-left" style="color: whitesmoke;">Olivia Emily
 
                                 </p>
@@ -67,11 +67,11 @@
                     </v-col>
                     <v-col class="col-md-6 col-sm-12" cols="12">
                         <v-row no-gutters class="justify-center align-center">
-                            <v-col class="col-md-6 col-sm-6 hidden-sm-and-down">
+                            <v-col class="col-md-4 col-sm-4 hidden-sm-and-down">
                                 <p class="subhead text-right mt-4 mr-4" style="color: whitesmoke;">Your Interviews :
                                 </p>
                             </v-col>
-                            <v-col class="col-md-6 col-sm-6 hidden-sm-and-down">
+                            <v-col class="col-md-8 col-sm-8 hidden-sm-and-down">
                                 <v-btn class="ma-2" outlined color="white" left>
                                     Audio & Text <v-icon right>mdi-volume-high</v-icon>
                                 </v-btn>
@@ -79,7 +79,7 @@
                                     Upload Video <v-icon right>ondemand_video</v-icon>
                                 </v-btn>
                             </v-col>
-                            <v-col class="col-md-8 col-sm-12  mt-8 marginr" cols="11" style="margin-right:-230px;">
+                            <v-col class="col-md-10 col-sm-12  mt-8 marginr" cols="11">
                                 <v-row style="background: rgb(37, 29, 68,0.20);border-radius: 10px;"
                                     class="align-center px-3 py-2" no-gutters>
                                     <v-col cols="4" md="4" sm="4" style="border-right: 1px solid whitesmoke;">
@@ -106,7 +106,7 @@
                         </v-row>
                     </v-col>
                 </v-row>
-                <v-row no-gutters class="justify-center">
+                <v-row no-gutters class="justify-center mt-10">
                     <v-col class="col-md-8 col-sm-12">
                         <v-tabs v-model="tab" background-color="rgb(255, 255, 255,0.0)" centered dark text show-arrows>
                             <v-tabs-slider></v-tabs-slider>
@@ -132,7 +132,7 @@
                         </v-tabs>
                     </v-col>
                 </v-row>
-                <v-row class="justify-center align-center tabrow" no-gutters style="background-color: #F0F3F1;">
+                <v-row class="justify-center align-center tabrow " no-gutters style="background-color: #F0F3F1;">
                     <v-col class="col-md-5 col-sm-12 " cols="12">
                         <v-row class="justify-center text-center" no-gutters>
 
@@ -171,14 +171,14 @@
 
 
 
-
+                        </v-row>
                     </v-col>
                 </v-row>
             </v-card>
 
             <v-container>
                 <v-row v-if="activetab === 1" class="justify-center">
-                    <v-col class="col-md-8 col-sm-12">
+                    <v-col class="col-md-10 col-sm-12">
                         <v-row class="justify-center">
 
                             <v-col class="col-md-3 col-sm-6" cols="3">
@@ -186,11 +186,11 @@
                                     <v-col cols="12" sm="3" md="3">
                                         <v-img src="https://i.ibb.co/G3zQ7md/Adobe-Illustrator-CC-icon.png"></v-img>
                                     </v-col>
-                                    <v-col sm="6" md="6" class="hidden-xs-only ">
-                                        <div class="text-left">Illustrator</div>
+                                    <v-col sm="7" md="7" class="hidden-xs-only ">
+                                        <div class="mini text-left">Illustrator</div>
                                         <v-progress-linear rounded value="90" color="#23A565"></v-progress-linear>
                                     </v-col>
-                                    <v-col sm="2" md="2" class="hidden-xs-only mt-3 pr-2">
+                                    <v-col sm="2" md="2" class="hidden-xs-only mt-1 pr-2">
                                         <span class="text-center subtitle-2">90%</span>
                                     </v-col>
                                 </v-row>
@@ -201,11 +201,11 @@
                                     <v-col cols="12" sm="3" md="3">
                                         <v-img src="https://i.ibb.co/5LmT1d2/Group-296.png"></v-img>
                                     </v-col>
-                                    <v-col sm="6" md="6" class="hidden-xs-only ">
-                                        <div class="text-center">Adobe XD</div>
+                                    <v-col sm="7" md="7" class="hidden-xs-only ">
+                                        <div class="mini text-left">Adobe XD</div>
                                         <v-progress-linear rounded value="70" color="#BF3B2C"></v-progress-linear>
                                     </v-col>
-                                    <v-col sm="2" md="2" class="hidden-xs-only mt-3 pr-2">
+                                    <v-col sm="2" md="2" class="hidden-xs-only mt-1 pr-2">
                                         <span class="text-center subtitle-2">70%</span>
                                     </v-col>
                                 </v-row>
@@ -215,11 +215,11 @@
                                     <v-col cols="12" sm="3" md="3">
                                         <v-img src="https://i.ibb.co/XF4kff4/Group-298.png"></v-img>
                                     </v-col>
-                                    <v-col sm="6" md="6" class="hidden-xs-only">
-                                        <div class="text-center">Photoshop</div>
+                                    <v-col sm="7" md="7" class="hidden-xs-only">
+                                        <div class="mini text-left">Photoshop</div>
                                         <v-progress-linear rounded value="95" color="#109083"></v-progress-linear>
                                     </v-col>
-                                    <v-col sm="2" md="2" class="hidden-xs-only mt-3 pr-2">
+                                    <v-col sm="2" md="2" class="hidden-xs-only mt-1 pr-2">
                                         <span class="text-center subtitle-2">95%</span>
                                     </v-col>
                                 </v-row>
@@ -229,11 +229,11 @@
                                     <v-col cols="12" sm="3" md="3">
                                         <v-img src="https://i.ibb.co/XX03172/Group-300.png"></v-img>
                                     </v-col>
-                                    <v-col sm="6" md="6" class="hidden-xs-only ">
-                                        <div class="subtitle-2 text-center">Premiere Pro</div>
+                                    <v-col sm="7" md="7" class="hidden-xs-only ">
+                                        <div class="mini text-left">Premiere Pro</div>
                                         <v-progress-linear rounded value="50" color="#F4B707"></v-progress-linear>
                                     </v-col>
-                                    <v-col sm="2" md="2" class="hidden-xs-only mt-3 pr-2">
+                                    <v-col sm="2" md="2" class="hidden-xs-only mt-1 pr-2">
                                         <span class="text-center subtitle-2">50%</span>
                                     </v-col>
                                 </v-row>
@@ -251,7 +251,7 @@
                                         <v-img src="https://i.ibb.co/XX03172/Group-300.png"></v-img>
                                     </v-col>
                                     <v-col sm="6" md="6" class="hidden-xs-only ">
-                                        <div class="text-center">Premiere Pro</div>
+                                        <div class="mini text-left">Premiere Pro</div>
                                         <v-progress-linear rounded value="50" color="#F4B707"></v-progress-linear>
                                     </v-col>
                                     <v-col sm="2" md="2" class="hidden-xs-only mt-3 pr-2">
@@ -266,7 +266,7 @@
                                         <v-img src="https://i.ibb.co/XX03172/Group-300.png"></v-img>
                                     </v-col>
                                     <v-col sm="6" md="6" class="hidden-xs-only ">
-                                        <div class="text-center">Premiere Pro</div>
+                                        <div class="mini text-left">Premiere Pro</div>
                                         <v-progress-linear rounded value="50" color="#F4B707"></v-progress-linear>
                                     </v-col>
                                     <v-col sm="2" md="2" class="hidden-xs-only mt-3 pr-2">
@@ -288,7 +288,7 @@
                                         <v-img src="https://i.ibb.co/XF4kff4/Group-298.png"></v-img>
                                     </v-col>
                                     <v-col sm="6" md="6" class="hidden-xs-only">
-                                        <div class="text-center">Photoshop</div>
+                                        <div class="mini text-left">Photoshop</div>
                                         <v-progress-linear rounded value="95" color="#109083"></v-progress-linear>
                                     </v-col>
                                     <v-col sm="2" md="2" class="hidden-xs-only mt-3 pr-2">
@@ -302,7 +302,7 @@
                                         <v-img src="https://i.ibb.co/XX03172/Group-300.png"></v-img>
                                     </v-col>
                                     <v-col sm="6" md="6" class="hidden-xs-only ">
-                                        <div class="text-center">Premiere Pro</div>
+                                        <div class="mini text-left">Premiere Pro</div>
                                         <v-progress-linear rounded value="50" color="#F4B707"></v-progress-linear>
                                     </v-col>
                                     <v-col sm="2" md="2" class="hidden-xs-only mt-3 pr-2">
@@ -324,7 +324,7 @@
                                         <v-img src="https://i.ibb.co/G3zQ7md/Adobe-Illustrator-CC-icon.png"></v-img>
                                     </v-col>
                                     <v-col sm="6" md="6" class="hidden-xs-only ">
-                                        <div class="text-left">Illustrator</div>
+                                        <div class="mini text-left">Illustrator</div>
                                         <v-progress-linear rounded value="90" color="#23A565"></v-progress-linear>
                                     </v-col>
                                     <v-col sm="2" md="2" class="hidden-xs-only mt-3 pr-2">
@@ -339,7 +339,7 @@
                                         <v-img src="https://i.ibb.co/5LmT1d2/Group-296.png"></v-img>
                                     </v-col>
                                     <v-col sm="6" md="6" class="hidden-xs-only ">
-                                        <div class="text-center">Adobe XD</div>
+                                        <div class="mini text-left">Adobe XD</div>
                                         <v-progress-linear rounded value="70" color="#BF3B2C"></v-progress-linear>
                                     </v-col>
                                     <v-col sm="2" md="2" class="hidden-xs-only mt-3 pr-2">
